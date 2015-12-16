@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "BaseTabBarController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,10 @@
 
 @implementation AppDelegate
 
-
+#pragma mark life cycle
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self makeWindow];
     return YES;
 }
 
@@ -41,5 +44,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark private methods
+-(void)makeWindow{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    BaseTabBarController * baseTabBarController = [[BaseTabBarController alloc] init];
+    
+    //基础item
+    UINavigationController *navigateController = [[UINavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
+    [baseTabBarController addChildViewController:navigateController];
+    
+    [self.window setRootViewController:baseTabBarController];
+    [self.window makeKeyAndVisible];
+}
+
 
 @end
