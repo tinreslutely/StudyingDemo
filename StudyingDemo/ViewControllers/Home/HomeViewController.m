@@ -8,6 +8,9 @@
 
 #import "HomeViewController.h"
 
+#import "BaseAnimationViewController.h"
+#import "TestCustomNavigationController.h"
+
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -29,9 +32,22 @@
     return 40;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:
+            [self.navigationController pushViewController:[[BaseAnimationViewController alloc] init] animated:YES];
+            break;
+        case 1:
+            [self.navigationController pushViewController:[[TestCustomNavigationController alloc] init] animated:YES];
+            break;
+        default:
+            break;
+    }
+}
+
 #pragma mark UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 2;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -47,6 +63,9 @@
     switch (indexPath.row) {
         case 0:
             [cell.textLabel setText:@"动画"];
+            break;
+        case 1:
+            [cell.textLabel setText:@"自定义导航栏"];
             break;
             
         default:
