@@ -20,7 +20,7 @@
     float top = STARTBAR_HEIGHT + 5;
     if(self = [super initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)]){
         
-        [self setBackgroundColor:UIColorFromRGBA(248, 248, 248, 1)];
+        [self setBackgroundColor:[UIColor redColor]];
         //[controller.navigationController setNavigationBarHidden:YES animated:YES];
         //左边按钮
         _leftButton = [[UIButton alloc] init];
@@ -97,6 +97,8 @@
         }];
         
         [controller.navigationController.navigationBar setFrame:CGRectMake(0, 0, SCREEN_WIDTH, 108)];
+        controller.navigationItem.leftBarButtonItem = nil;
+        [controller.navigationItem setTitleView:self];
 //        [controller.view addSubview:self];
 //        [controller.view bringSubviewToFront:self];
     }
