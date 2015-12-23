@@ -16,8 +16,8 @@
 		B50C355C1C213EE100BA310F /* StudyingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50C355B1C213EE100BA310F /* StudyingDemoUITests.m */; };
 		B50C356E1C2146F300BA310F /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50C356D1C2146F300BA310F /* BaseTabBarController.m */; };
 		B50C35721C21473700BA310F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50C35711C21473700BA310F /* HomeViewController.m */; };
+		B52384591C23B62A00FFAF6A /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = B52384581C23B62A00FFAF6A /* UINavigationBar+Awesome.m */; };
 		B5A130AC1C229F8D00137CCC /* TestCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A130AB1C229F8D00137CCC /* TestCustomNavigationController.m */; };
-		B5A130AF1C229FE100137CCC /* CustomNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A130AE1C229FE100137CCC /* CustomNavigationView.m */; };
 		B5A130B71C22B69100137CCC /* CustomSearchNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A130B61C22B69100137CCC /* CustomSearchNavigationView.m */; };
 		DEE27F70E9295AEC13258512 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C7BD5EE4B9101D59313DD /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -63,10 +63,10 @@
 		B50C356D1C2146F300BA310F /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		B50C35701C21473700BA310F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B50C35711C21473700BA310F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B52384571C23B62A00FFAF6A /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Awesome.h"; path = "../../../../../../../../Downloads/LTNavigationBar-master/LTNavigationBar/UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		B52384581C23B62A00FFAF6A /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Awesome.m"; path = "../../../../../../../../Downloads/LTNavigationBar-master/LTNavigationBar/UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		B5A130AA1C229F8D00137CCC /* TestCustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCustomNavigationController.h; sourceTree = "<group>"; };
 		B5A130AB1C229F8D00137CCC /* TestCustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCustomNavigationController.m; sourceTree = "<group>"; };
-		B5A130AD1C229FE100137CCC /* CustomNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomNavigationView.h; path = ../../ViewControllers/Navigate/CustomNavigationView.h; sourceTree = "<group>"; };
-		B5A130AE1C229FE100137CCC /* CustomNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomNavigationView.m; path = ../../ViewControllers/Navigate/CustomNavigationView.m; sourceTree = "<group>"; };
 		B5A130B21C22A48300137CCC /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		B5A130B51C22B69100137CCC /* CustomSearchNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSearchNavigationView.h; sourceTree = "<group>"; };
 		B5A130B61C22B69100137CCC /* CustomSearchNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSearchNavigationView.m; sourceTree = "<group>"; };
@@ -246,8 +246,8 @@
 		B5A130B41C22A4A700137CCC /* CustomNavigate */ = {
 			isa = PBXGroup;
 			children = (
-				B5A130AD1C229FE100137CCC /* CustomNavigationView.h */,
-				B5A130AE1C229FE100137CCC /* CustomNavigationView.m */,
+				B52384571C23B62A00FFAF6A /* UINavigationBar+Awesome.h */,
+				B52384581C23B62A00FFAF6A /* UINavigationBar+Awesome.m */,
 				B5A130B51C22B69100137CCC /* CustomSearchNavigationView.h */,
 				B5A130B61C22B69100137CCC /* CustomSearchNavigationView.m */,
 			);
@@ -438,9 +438,9 @@
 				B50C356E1C2146F300BA310F /* BaseTabBarController.m in Sources */,
 				B503DD731C224F2B000B4C8E /* BaseAnimationViewController.m in Sources */,
 				B5A130B71C22B69100137CCC /* CustomSearchNavigationView.m in Sources */,
+				B52384591C23B62A00FFAF6A /* UINavigationBar+Awesome.m in Sources */,
 				B50C35381C213EE100BA310F /* main.m in Sources */,
 				B5A130AC1C229F8D00137CCC /* TestCustomNavigationController.m in Sources */,
-				B5A130AF1C229FE100137CCC /* CustomNavigationView.m in Sources */,
 				B50C35721C21473700BA310F /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
