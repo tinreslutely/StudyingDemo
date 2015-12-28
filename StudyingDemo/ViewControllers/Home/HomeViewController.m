@@ -10,6 +10,7 @@
 
 #import "BaseAnimationViewController.h"
 #import "TestCustomNavigationController.h"
+#import "TestBLKFlexibleHeightBarControllerViewController.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -44,6 +45,9 @@
         case 1:
             [self.navigationController pushViewController:[[TestCustomNavigationController alloc] init] animated:YES];
             break;
+        case 2:
+            [self.navigationController pushViewController:[[TestBLKFlexibleHeightBarControllerViewController alloc] init] animated:YES];
+            break;
         default:
             break;
     }
@@ -51,7 +55,7 @@
 
 #pragma mark UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return 3;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -71,6 +75,9 @@
         case 1:
             [cell.textLabel setText:@"自定义导航栏"];
             break;
+        case 2:
+            [cell.textLabel setText:@"BLKFlexibleHeightBar导航栏"];
+            break;
             
         default:
             break;
@@ -78,12 +85,13 @@
     return cell;
 }
 
-
 -(void)initView{
     UITableView *tableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds] style:UITableViewStyleGrouped];
     [tableView setDataSource:self];
     [tableView setDelegate:self];
     [self.view addSubview:tableView];
 }
+
+
 
 @end

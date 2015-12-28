@@ -16,6 +16,8 @@
 		B50C355C1C213EE100BA310F /* StudyingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50C355B1C213EE100BA310F /* StudyingDemoUITests.m */; };
 		B50C356E1C2146F300BA310F /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50C356D1C2146F300BA310F /* BaseTabBarController.m */; };
 		B50C35721C21473700BA310F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50C35711C21473700BA310F /* HomeViewController.m */; };
+		B50C6DA31C2D17490011D156 /* TestBLKFlexibleHeightBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50C6DA21C2D17490011D156 /* TestBLKFlexibleHeightBarControllerViewController.m */; };
+		B50C6DA61C2D30A60011D156 /* FacebookStyleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B50C6DA51C2D30A60011D156 /* FacebookStyleBar.m */; };
 		B52384591C23B62A00FFAF6A /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = B52384581C23B62A00FFAF6A /* UINavigationBar+Awesome.m */; };
 		B5A130AC1C229F8D00137CCC /* TestCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A130AB1C229F8D00137CCC /* TestCustomNavigationController.m */; };
 		B5A130B71C22B69100137CCC /* CustomSearchNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A130B61C22B69100137CCC /* CustomSearchNavigationView.m */; };
@@ -63,6 +65,10 @@
 		B50C356D1C2146F300BA310F /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		B50C35701C21473700BA310F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B50C35711C21473700BA310F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B50C6DA11C2D17490011D156 /* TestBLKFlexibleHeightBarControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBLKFlexibleHeightBarControllerViewController.h; sourceTree = "<group>"; };
+		B50C6DA21C2D17490011D156 /* TestBLKFlexibleHeightBarControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBLKFlexibleHeightBarControllerViewController.m; sourceTree = "<group>"; };
+		B50C6DA41C2D30A60011D156 /* FacebookStyleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookStyleBar.h; sourceTree = "<group>"; };
+		B50C6DA51C2D30A60011D156 /* FacebookStyleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookStyleBar.m; sourceTree = "<group>"; };
 		B52384571C23B62A00FFAF6A /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Awesome.h"; path = "../../../../../../../../Downloads/LTNavigationBar-master/LTNavigationBar/UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		B52384581C23B62A00FFAF6A /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Awesome.m"; path = "../../../../../../../../Downloads/LTNavigationBar-master/LTNavigationBar/UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		B5A130AA1C229F8D00137CCC /* TestCustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCustomNavigationController.h; sourceTree = "<group>"; };
@@ -221,8 +227,12 @@
 		B50C35731C2147CF00BA310F /* Navigate */ = {
 			isa = PBXGroup;
 			children = (
+				B50C6DA41C2D30A60011D156 /* FacebookStyleBar.h */,
+				B50C6DA51C2D30A60011D156 /* FacebookStyleBar.m */,
 				B5A130AA1C229F8D00137CCC /* TestCustomNavigationController.h */,
 				B5A130AB1C229F8D00137CCC /* TestCustomNavigationController.m */,
+				B50C6DA11C2D17490011D156 /* TestBLKFlexibleHeightBarControllerViewController.h */,
+				B50C6DA21C2D17490011D156 /* TestBLKFlexibleHeightBarControllerViewController.m */,
 			);
 			path = Navigate;
 			sourceTree = "<group>";
@@ -435,11 +445,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50C353B1C213EE100BA310F /* AppDelegate.m in Sources */,
+				B50C6DA31C2D17490011D156 /* TestBLKFlexibleHeightBarControllerViewController.m in Sources */,
 				B50C356E1C2146F300BA310F /* BaseTabBarController.m in Sources */,
 				B503DD731C224F2B000B4C8E /* BaseAnimationViewController.m in Sources */,
 				B5A130B71C22B69100137CCC /* CustomSearchNavigationView.m in Sources */,
 				B52384591C23B62A00FFAF6A /* UINavigationBar+Awesome.m in Sources */,
 				B50C35381C213EE100BA310F /* main.m in Sources */,
+				B50C6DA61C2D30A60011D156 /* FacebookStyleBar.m in Sources */,
 				B5A130AC1C229F8D00137CCC /* TestCustomNavigationController.m in Sources */,
 				B50C35721C21473700BA310F /* HomeViewController.m in Sources */,
 			);

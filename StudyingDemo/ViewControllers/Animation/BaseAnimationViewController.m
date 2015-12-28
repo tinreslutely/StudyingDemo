@@ -17,12 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    [self initScaleLayer];
-    [self initGroupLayer];
+//    [self initScaleLayer];
+//    [self initGroupLayer];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
+}
+
+-(void)initRectLayer{
+    CALayer *rectLayer = [[CALayer alloc] init];
+    [rectLayer setFrame:CGRectMake(15, 200, 30, 30)];
+    [rectLayer setCornerRadius:15];
+    [rectLayer setBackgroundColor:[[UIColor blackColor] CGColor]];
+    [self.view.layer addSublayer:rectLayer];
+    
+    CAKeyframeAnimation *rectRunAnimation = [CAKeyframeAnimation animationWithKeyPath:@"postion"];
+    rectRunAnimation.values = @[[NSValue valueWithCGPoint:rectLayer.frame.origin],[NSValue valueWithCGPoint:CGPointMake(320-15,rectLayer.frame.origin.y)]];
     
 }
 
